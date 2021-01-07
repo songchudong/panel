@@ -1178,6 +1178,9 @@ var bt_tools = {
                                 };
                             }
                             break;
+                        case 'ace':
+                            
+                        break;
                         case 'textarea':
                             html += '<textarea class="bt-input-text"' + _that.$verify(style, 'style') + attribute + ' >' + (item.value || '') + '</textarea>';
                             $.each(['blur', 'focus', 'input'], function (index, items) {
@@ -1836,7 +1839,6 @@ var bt_tools = {
         });
     },
 };
-
 $.fn.serializeObject = function () {
     var hasOwnProperty = Object.prototype.hasOwnProperty;
     return this.serializeArray().reduce(function (data, pair) {
@@ -1846,3 +1848,4 @@ $.fn.serializeObject = function () {
         return data;
     }, {});
 };
+

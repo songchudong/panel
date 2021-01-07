@@ -572,7 +572,7 @@ var site = {
 
     /**
      * @description 备份站点视图
-     * @param {object} config  配置参数
+     * @param {object} config  配置参数 站点ID:config.id,站点域名:config.name;
      * @param {function} callback  回调函数
     */
     backup_site_view:function(config,callback){
